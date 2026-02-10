@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Agility Trial Scheduler</title>
+    <title>3 Ring Scheduler</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
         * {
@@ -418,7 +418,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🐕 Dog Agility Trial Scheduler</h1>
+            <h1>3 ring scheduler</h1>
             <p>Automated 3-Ring Trial Scheduling System</p>
         </div>
         
@@ -426,10 +426,10 @@
             <div id="uploadSection" class="upload-section">
                 <h2 style="margin-bottom: 20px;">Upload Trial Data</h2>
                 <p style="margin-bottom: 20px; color: #666;">
-                    Upload your Excel file with sheets: "Form Responses 1", "Judges", and "class and rounds"
+                    Upload the file you downloaded from google forms that includes sheets "Form Responses 1", "Judges", and "class and rounds"
                 </p>
                 <label for="fileInput" class="upload-label">
-                    📁 Choose Excel File
+                    put it here
                 </label>
                 <input type="file" id="fileInput" accept=".xlsx,.xls">
                 <p id="fileName" style="margin-top: 15px; color: #666;"></p>
@@ -437,16 +437,16 @@
             
             <div id="controlSection" style="display: none; text-align: center; margin-bottom: 30px;">
                 <button id="generateBtn" class="btn">⚡ Generate Schedule</button>
-                <button id="exportBtn" class="btn btn-success" style="display: none;">📥 Export to Excel</button>
+                <button id="exportBtn" class="btn btn-success" style="display: none;">Send Schedule to spreadsheet xlsx format</button>
             </div>
             
             <div id="statusSection"></div>
             
             <div id="resultsSection" style="display: none;">
                 <div class="tabs">
-                    <div class="tab active" data-tab="schedule">📅 Schedule</div>
-                    <div class="tab" data-tab="grid">📊 Round Distribution</div>
-                    <div class="tab" data-tab="summary">👥 Judge Summary</div>
+                    <div class="tab active" data-tab="schedule"> Schedule</div>
+                    <div class="tab" data-tab="grid"> Round Distribution</div>
+                    <div class="tab" data-tab="summary"> Judge Summary</div>
                 </div>
                 
                 <div id="scheduleTab" class="tab-content active"></div>
